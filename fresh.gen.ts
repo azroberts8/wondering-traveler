@@ -4,9 +4,7 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $api_joke from "./routes/api/joke.ts";
-import * as $api_map_lat_long_ from "./routes/api/map/[lat]/[long].tsx";
-import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $api_map from "./routes/api/map.ts";
 import * as $index from "./routes/index.tsx";
 import * as $place_id_ from "./routes/place/[id].tsx";
 import * as $Counter from "./islands/Counter.tsx";
@@ -16,9 +14,7 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/api/joke.ts": $api_joke,
-    "./routes/api/map/[lat]/[long].tsx": $api_map_lat_long_,
-    "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/api/map.ts": $api_map,
     "./routes/index.tsx": $index,
     "./routes/place/[id].tsx": $place_id_,
   },
