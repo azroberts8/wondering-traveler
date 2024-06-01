@@ -2,21 +2,21 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $L_id_ from "./routes/L/[id].tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_map from "./routes/api/map.ts";
 import * as $index from "./routes/index.tsx";
-import * as $place_id_ from "./routes/place/[id].tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
+    "./routes/L/[id].tsx": $L_id_,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/map.ts": $api_map,
     "./routes/index.tsx": $index,
-    "./routes/place/[id].tsx": $place_id_,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
