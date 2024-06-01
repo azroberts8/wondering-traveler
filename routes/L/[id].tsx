@@ -19,7 +19,7 @@ export const handler: Handlers<Details> = {
             "database":"travelers",
             "dataSource":"wondering-traveler",
             "filter": {
-                "shortID": ctx.params.id
+                "shortID": ctx.params.id.toLowerCase()
             }
         }
         const details: Details = await fetch("https://us-east-1.aws.data.mongodb-api.com/app/data-xqjcxmf/endpoint/data/v1/action/findOne", {
